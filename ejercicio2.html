@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejemplo CSS Grip</title>
+  <link rel="icon" href="favicon.ico" type="image/icons8-animales-64.png">
+  <style>
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      grid-template-rows: 100px auto;
+      gap: 10px;
+      background-color: lightgray;
+    }
+
+    .grid-item {
+      background-color: lightcoral;
+      padding: 20px;
+      border: 1px solid black;
+    }
+
+    .grid-item1 {
+      grid-column: 1 / 3;  /* Abarca desde la columna 1 hasta la 3 */
+    }
+
+    .grid-item2 {
+      grid-row: 1 / 3;  /* Abarca desde la fila 1 hasta la 3 */
+    }
+  </style>
+</head>
+<body>
+  <div class="grid-container">
+    <div class="grid-item grid-item1">Elemento 1</div>
+    <div class="grid-item grid-item2">Elemento 2</div>
+    <div class="grid-item">Elemento 3</div>
+    <div class="grid-item">Elemento 4</div>
+  </div>
+</body>
+</html>
